@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_height="match_parent"
+  android:layout_width="match_parent"
+  android:orientation="vertical">
+
+  <LinearLayout
+    android:id="@+id/search_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <AutoCompleteTextView
+      android:id="@+id/add_recipe_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:hint="@string/search_for_a_recipe"
+      android:inputType="textAutoComplete|textAutoCorrect"/>
+    <!--<Button-->
+      <!--android:id="@+id/add_recipe_button"-->
+      <!--android:layout_width="wrap_content"-->
+      <!--android:layout_height="match_parent"-->
+      <!--android:layout_weight="0"-->
+      <!--android:text="Search"/>-->
+  </LinearLayout>
+
+  <LinearLayout
+    android:id="@+id/add_ingredient"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <EditText
+      android:id="@+id/add_ingredient_text"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:hint="@string/add_one_ingredient"/>
+    <Button
+      android:id="@+id/add_ingredient_button"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:layout_weight="0"
+      android:text="Add"/>
+  </LinearLayout>
+
+  <ExpandableListView
+    android:id="@+id/shopping_expandable_list_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:indicatorLeft="?android:attr/expandableListPreferredChildIndicatorLeft"
+    android:divider="@color/colorAccent"
+    android:dividerHeight=".5dp">
+
+  </ExpandableListView>
+</LinearLayout>

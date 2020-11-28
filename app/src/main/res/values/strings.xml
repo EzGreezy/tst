@@ -1,0 +1,13 @@
+<resources>
+  <string name="app_name">Reciplee</string>
+
+  <string name="navigation_drawer_open">Open navigation drawer</string>
+  <string name="navigation_drawer_close">Close navigation drawer</string>
+
+  <string name="action_settings">Settings</string>
+
+  <string name="add_one_ingredient">Add one ingredient...</string>
+  <string name="search_for_a_recipe">Search for a saved recipe...</string>
+  <string name="add_ingredient_dialog_cancel">Cancel</string>
+  <string name="add_ingredient_dialog_add">Add</string>
+</resources>
